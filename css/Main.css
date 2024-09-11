@@ -1,0 +1,1223 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@font-face {
+    font-family: 'Andarion';
+    src: url('fontes/Andarion-Regular.ttf');
+    src: url('fontes/Andarion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Markbats';
+    src: url('fontes/Markbats12-Regular.ttf');
+    src: url('fontes/Markbats12-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glipervelz';
+    src: url('fontes/Glipervelz-Origy\ FULL.ttf');
+    src: url('fontes/Glipervelz-Origy\ FULL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Standart';
+    src: url('fontes/StandardGalacticAlphabet-Regular.ttf');
+    src: url('fontes/StandardGalacticAlphabet-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cybertronian';
+    src: url('fontes/Cybertronianfinal-Regular.ttf');
+    src: url('fontes/Cybertronianfinal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orb';
+    src: url('fontes/The-Orb-Report.ttf');
+    src: url('fontes/The-Orb-Report.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.palavra{
+   font-family: "Calibri";
+}
+* {
+    margin: 0px;
+    border: 0px;
+
+}
+
+
+
+body {
+    border: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixo {   
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    position: fixed;
+}
+
+:root {
+    --cor-principal-nebula: rgb(23, 197, 110);
+
+    --cor-principal: #0c1830;
+    --cor-secundaria:  #ff8800;
+    --cor-terciaria: #c0c0c0;
+    --cor-quaternária: #0099cc;
+    --fonte-primaria: Orbitron;
+    --fonte-secundaria: Futura;
+  }
+
+/* Início Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--cor-principal);
+    width: 100%;
+    height: 10vh;
+}
+
+.nome_cabecalho {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 1%;
+}
+
+.logotipo_box {
+    width: auto;
+    height: 50%;
+    margin: 5%;
+}
+
+.imagens {
+    width: 100%;
+    height: 100%;
+}
+
+.nome_site {
+    color: white;
+    font-family: var(--fonte-primaria);
+    font-size: 4vh;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+}
+
+.pesquisa form {
+    width: 16vw;
+    margin: 3%;
+}
+
+.bi-search {
+    color: white;
+    margin: 5%;
+}
+
+/* Fim Header */
+
+/* Ínicio Sidebar */
+
+.barra_lateral {
+    height: 90vh;
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.sidebar_style{
+    width: 90%;
+    background-color: var(--cor-quaternária);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    padding-top: 10%;
+    z-index: 100;
+}
+
+.lista_sidebar {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    list-style: none;
+    padding: 2%;
+}
+
+.itens_side {
+    width: 100%;
+    padding: 2%;
+    text-decoration: none;
+    cursor: pointer;  
+    border-radius: 1vh; 
+}
+
+.barra_lateral a {
+    text-decoration: none;  
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    color: var(--cor-principal);
+    font-family: var(--fonte-primaria);
+    font-size: 2vh;
+}
+
+.itens_side:hover{
+    background-color: var(--cor-secundaria);
+}
+
+.config{
+    width: 90%;
+    height: 50%;
+    margin-bottom: 5%;
+    padding-bottom: 2vh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.sidebar_style svg{
+    align-self: center;
+    height: 3vh;
+    width: auto;
+}
+
+
+
+
+.botao_sidebar {
+
+    height: 5vh;
+    width: 5vh;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.botao_sidebar svg{
+    height: 70%;
+    width: auto;
+}
+
+.esconder{
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Fim Sidebar */
+
+/* Início Main */
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(235, 235, 235);
+}
+
+.inicio {
+    height: 100vh;
+    background-color: var(--cor-terciaria);
+    background-size: 100vw auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagem_inicio{
+    border: 2px solid;
+    border-color: var(--cor-secundaria);
+    width: 30vw;
+    height: 60vh;    
+    overflow: hidden;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_inicio img{
+    width: 100%;
+    height: auto;
+}
+
+.texto_inicio{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 2vw;
+}
+
+.texto_inicio h1{
+    width: 100%;
+    height: 30%;
+    font-size: 3vw;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-principal);
+}
+
+.texto_inicio p{
+    width: 100%;
+    height: 50%;
+    font-size: 2vh;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal);
+}
+
+
+
+/* Destaque Principal */
+
+.titulo_destaque{
+    font-family: var(--fonte-primaria);
+    font-size: 3vw;
+    padding-left: 7%;
+}
+
+.destaque_principal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(247, 235, 222);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo_principal {
+    padding: 20px;
+    width: 90%;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+/* Carrossel Notícias */
+
+.carrossel_noticias{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem_noticia1{
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat url(imagens/noticiaenergia.jpg);
+    background-size: 100vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10vw;
+}
+
+.imagem_noticia2{
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat url(imagens/buraconegro.jpg);
+    background-size: 100vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px;
+}
+
+.imagem_noticia3{
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat url(imagens/estacaoresidencial.jpg);
+    background-size: 100vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px;
+}
+
+.bloco_noticia{
+    max-width: 25vw;
+    max-height: 60vh;
+    width: 25vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra_colorida_bloco_noticia{
+    width: 100%;
+    height: 1vh;
+    background-color: var(--cor-principal);
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.conteudo_bloco_noticia{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.texto_bloco_noticia{
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    max-width: inherit;
+    max-height: inherit;
+    align-self: top;
+}
+
+.texto_bloco_noticia h5{
+    font-size: 2vw;
+    color: black;
+    font-family: var(--fonte-primaria);
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+.texto_bloco_noticia p{
+    font-size: 1vw;
+    font-family: var(--fonte-secundaria);
+    color: rgb(53, 53, 53);
+    text-indent: 1.5em;
+    margin-top: 1vh;
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.botao_enc_noticia{
+    padding-right: 5vh;
+    width: 100%;
+    height: 20%;
+    max-width: inherit;
+    max-width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+}
+
+.botao_enc_noticia .espaco{
+    width: 50%;
+    height: 20%;
+}
+
+.botao_enc_noticia .botao{
+    width: 50%;
+    height: 100%;
+
+}
+
+.botao_enc_noticia a {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonte-secundaria);
+    font-size: 2vh;
+    text-decoration: none;
+    flex-wrap: 1vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.botao_enc_noticia p{
+    font-size: 0,5vw;
+    width: 100%;
+    height: auto;
+    color: black;
+}
+
+.botao_enc_noticia svg{
+    width: 50%;
+    height: auto;
+    color: orangered;
+}
+
+/* Loja */
+
+.shop_naves {
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head_shop_naves{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    padding: 2vh;
+}
+
+.texto_head_shop_naves{
+    width: 40vw;
+    height: 100%;
+    max-width: 40vw;
+    max-height: 100%;
+}
+
+.texto_head_shop_naves p{
+    font-size: 3vw;
+    font-family: var(--fonte-primaria);
+    overflow: hidden;
+    color: var(--cor-secundaria);
+}
+
+.corpo_shop_naves{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bloco_shop_naves{
+    width: 30vw;
+    height: 60vh;
+    margin-right: 1.6vw;
+    margin-left: 1.6vw;
+}
+
+.imagem_bloco_shop_naves{
+    width: 100%;
+    height: 60%;
+    border: 2px solid;
+    border-color: var(--cor-secundaria);    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_bloco_shop_naves img{    
+    width: 100%;
+    height: auto;
+}
+
+.texto_bloco_shop_naves{
+    width: 100%;
+    height: 40%;
+    padding: 1vh;
+}
+
+.texto_bloco_shop_naves a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.texto_bloco_shop_naves h5{
+    font-size: 2vw;
+    color: var(--cor-principal);
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: var(--fonte-primaria);
+}
+
+.texto_bloco_shop_naves p{
+    font-size: 0.7vw;
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: black;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.barra_inferior_shop_naves{
+    width: 100%;
+    height: 10vh;
+}
+
+
+/* Fim Main */
+
+/* Início Footer */
+
+footer {
+    height: 20vh;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+}
+
+footer p{
+    width: 40vw;
+    font-size: 2vh;
+    color: var(--cor-terciaria);
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/* Final Footer */
+
+
+
+
+
+
+/* Início Página de Notícias */
+
+.inicio_noticias{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--cor-terciaria);
+}
+
+.inicio_noticias h1{
+    font-size: 6vh;
+    color: var(--cor-principal);
+    font-family: var(--fonte-primaria);
+}
+
+
+.ultimas_noticias {
+    width: 100vw;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-terciaria);
+}
+
+.head_ultimas_noticias{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    padding: 4vh;
+}
+
+.texto_head_ultimas_noticias{
+    width: 40vw;
+    height: 100%;
+    max-width: 40vw;
+    max-height: 100%;
+}
+
+.texto_head_ultimas_noticias p{
+    font-size: 3vw;
+    font-family: var(--fonte-primaria);
+    overflow: hidden;
+    color: var(--cor-secundaria);
+}
+
+.bloco_ultimas_noticias{
+    width: 70vw;
+    height: 40vh;
+    margin: 2vh;
+    display: flex;  
+    border-radius: 2vh;
+    background-color: white;
+    border: 2px solid;
+    border-color: var(--cor-secundaria);
+}
+
+
+.imagem_bloco_ultimas_noticias{
+    width: 40%;
+    height: 100%;    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+}
+
+.imagem_bloco_ultimas_noticias img{    
+    width: auto;
+    height: 100%;
+}
+
+.texto_bloco_ultimas_noticias{
+    width: 60%;
+    height: 100%;
+    padding: 2vh;
+    text-align: center;
+}
+
+.texto_bloco_ultimas_noticias a{
+    text-decoration: none;
+}
+
+.texto_bloco_ultimas_noticias h5{
+    font-size: 2vw;
+    color: var(--cor-principal);
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.texto_bloco_ultimas_noticias p{
+    font-size: 1vw;
+    max-width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: var(--cor-principal);
+    font-family: var(--fonte-secundaria);
+}
+
+
+.barra_inferior_ultimas_noticias{
+    width: 100%;
+    height: 10vh;
+}
+
+
+
+
+
+
+/* Início Página de Parceiros */
+
+.carrossel_parceiros{
+    width: 100vw;
+    height: 1600vh;
+    background-color: white;
+}
+
+.bloco_logo_quasar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03091f;
+    padding: 2vh;    
+    overflow: hidden;
+}
+
+.bloco_logo_saturn{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2vh;    
+    overflow: hidden;
+}
+
+
+.bloco_logo_union{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #484848;
+    padding: 2vh;    
+    overflow: hidden;
+}
+
+.bloco_logo_ufo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #020F19;
+    padding: 2vh;    
+    overflow: hidden;
+}
+
+.bloco_logo_obisidian{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010000;
+    padding: 2vh;    
+    overflow: hidden;
+}
+
+
+.logo_obisidian{
+    width: 70vh;
+    height: 70vh;
+    border-radius: 5%;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;       
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.bloco_capa{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    padding: 2vh;    
+    overflow: hidden;
+}
+
+.capa_quasar{
+    width: 50vw;
+    height: 96vh;
+    background: no-repeat url(imagens/Quasar/capa.jpg);
+    background-size: 50vw auto ;
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    text-align: center;
+    padding: 2vh;
+    gap: 3vh;
+    border-radius: 5%;
+}
+
+.capa_saturn{
+    width: 50vw;
+    height: 96vh;
+    background: no-repeat url(imagens/Saturn/capa.jpg);
+    background-size: 50vw auto ;
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    text-align: center;
+    padding: 2vh;
+    gap: 3vh;
+    border-radius: 5%;
+}
+
+.capa_union{
+    width: 50vw;
+    height: 96vh;
+    background: no-repeat url(imagens/Union/capa.jpg);
+    background-size: 50vw auto ;
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    text-align: center;
+    padding: 2vh;
+    gap: 3vh;
+    border-radius: 5%;
+}
+
+.capa_ufo{
+    width: 50vw;
+    height: 96vh;
+    background: no-repeat url(imagens/Ufo/capa.jpg);
+    background-size: 50vw auto ;
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    text-align: center;
+    padding: 2vh;
+    gap: 3vh;
+    border-radius: 5%;
+}
+
+.capa_obisidian{
+    width: 50vw;
+    height: 96vh;
+    background: no-repeat url(imagens/Obisidian/estacao.jpg);
+    background-size: 50vw auto ;
+    display: flex;
+    flex-direction: column;    
+    overflow: hidden;
+    text-align: center;
+    padding: 2vh;
+    gap: 3vh;
+    border-radius: 5%;
+}
+
+.carrossel_parceiros h1{
+    font-size: 5vh;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-principal);
+    max-width: 50vw;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.carrossel_parceiros p{
+    font-size: 2vh;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal);
+    max-width: 50vw;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.carrossel_parceiros h3{
+    font-size: 5vh;
+    font-family: var(--fonte-primaria);
+    color: white;
+    max-width: 50vw;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.carrossel_parceiros h4{
+    font-size: 2vh;
+    font-family: var(--fonte-secundaria);
+    color: white;
+    max-width: 50vw;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.bloco_loja{
+    background-color: var(--cor-principal);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.produto{
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: top;
+    align-items: center;
+    background-color: white;        
+    border: 2px solid;
+    border-color: var(--cor-secundaria);
+    border-radius: 5vw;
+    background-color: var(--cor-terciaria);
+}
+
+.imagem_produto{
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_produto img{
+    width: 100%;
+    height: auto;
+}
+
+.barraproduto{
+    width: 40vw;
+    height: 2vh;
+    background-color: var(--cor-principal);
+}
+
+.info_produto{
+    width: 40vw;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 2vw;
+}
+
+.info_produto h1{
+    font-size: 5vh;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-principal);
+    max-width: 40vw;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.info_produto h5{
+    font-size: 2vh;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quaternária);
+    max-width: 40vw;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: var(--fonte-primaria);
+}
+
+.acessar{
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--cor-secundaria);
+    border-radius: 20vh;
+    color: var(--cor-principal);
+    align-self: center;
+}
+
+.espaco{
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--cor-principal);
+}
+
+
+
+
+
+/* Início Página de Configurações */
+
+.bloco_config {
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    background-size: 100vw auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 15px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-principal);
+    
+}
+
+.temas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tema{
+    width: 17%;
+    height: 100%;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.gag{
+    width: 100%;
+    height: 20%;
+}
+
+.tema button {
+    width: 60%;
+    height: 15%;
+    border-radius: 5px;
+    margin: 10px;
+    z-index: 99;
+}
+
+.tema p {
+    font-size: 200%;
+}
+
+
+
+.andarion{
+    font-family: "Andarion"
+}
+
+
+
+
+
+
+
+
+/* Início Página de Lojas */
+
+.info_lojas{
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+    background-color: white;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+
+.dropdown {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.dropdown_button{
+    width: 80%;
+    height: 5%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-family: var(--fonte-primaria);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.all_round{    
+    border-radius: 20px;
+}
+
+.round_top{    
+    border-top-left-radius: 20px;    
+    border-top-right-radius: 20px;
+}
+
+.conteudo_dropdown {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-quaternária);
+    border-bottom-left-radius: 20px;    
+    border-bottom-right-radius: 20px;
+    gap: 1px;
+  }
+
+.conteudo_dropdown button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;    
+    background-color: var(--cor-quaternária);
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal);
+    z-index: 100;
+    border-bottom-left-radius: 20px;    
+    border-bottom-right-radius: 20px;
+}
+
+.dropdown-content button:hover{
+    color: var(--cor-secundaria);
+}
+
+.hide{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.info_das_lojas {
+    width: 100%;
+    height: 100%;
+    border: 2px var(--cor-secundaria) solid;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+
+
+

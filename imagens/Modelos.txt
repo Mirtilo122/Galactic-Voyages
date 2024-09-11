@@ -1,0 +1,5 @@
+Union      - Construções, Megaestruturas
+Ufo        - Fantasia, Criatividade
+Saturn     - Luxo, Classe Alta
+Quasar     - Padrão, Classe média, Utilitário Pessoal
+Obisidian  - Nave de Produção, Naves Mineradoras
